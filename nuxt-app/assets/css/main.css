@@ -1,0 +1,58 @@
+:root {
+    --clr-header-nav-background-start: #CCE3DE;
+    --clr-header-nav-backgrund-end: #EAF4F4;
+    --clr-header-nav-item-selected: #A4C3B2;
+    --clr-header-nav-text-primary: #2A3D45;
+    --clr-header-nav-text-primary-selected: #2A3D45;
+
+    --clr-footer-background: #6B9080;
+    --clr-footer-text: #F6FFF8;
+
+    --ff-primary: 'Manrope', sans-serif;
+    --ff-font-awesome: 'Font Awesome 5 free';
+    --font-font-awesome-brands: 'Font Awesome 5 Brands';
+
+    --nav-item-horizontal-padding: 1em;
+    --desktop-gutter: 1em;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.main-container {
+    margin: var(--desktop-gutter);
+}
