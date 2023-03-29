@@ -4,6 +4,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "staging": "set ENV=staging&& nuxt dev",
+    "production": "set ENV=production&& nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"

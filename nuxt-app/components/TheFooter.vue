@@ -1,10 +1,13 @@
 <template>
     <footer>
         <div class="footer-content">
+ 
+            <span v-if="config.siteEnvironment">
+            {{ config.siteEnvironment }}
+            </span>
 
             <div></div>
             <div>&copy;{{ appStore.copyrightText }}</div>
-            <div class="contact-details">hmu: 123</div>
             <div></div>
 
         </div>
@@ -12,9 +15,10 @@
 </template>
 
 <script setup lang="ts">
-import { useAppStore } from '~~/store/app'
-    const { public: config } = useRuntimeConfig() 
+    import { useAppStore } from '~~/store/app'
     const appStore = useAppStore()
+    const { public: config } = useRuntimeConfig() 
+    console.log(config.siteEnvironment)
 </script>
 
 <style scoped>

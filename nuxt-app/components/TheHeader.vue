@@ -3,7 +3,7 @@
          <div class="top-line">
              <div class="logo-title">
                  <NuxtLink to="/main-page" class="logo">
-                     <h1>{{config.sitename}}</h1>
+                     <h1>{{ config.sitename }}</h1>
                  </NuxtLink>
              </div>
          </div>

@@ -1,4 +1,7 @@
+const appEnv = process.env.ENV || 'development'
 import { defineNuxtConfig } from 'nuxt/config'
+import { GlobalSettings } from './environmentsettings'
+
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -14,6 +17,9 @@ export default defineNuxtConfig({
         public: {
             sitename: 'random nuxt3 website',
             companyname: 'Random Inc.',
+            telephone: GlobalSettings[appEnv as keyof typeof GlobalSettings].telephone,
+            siteEnvironment: GlobalSettings[appEnv as keyof typeof GlobalSettings].siteEnvironment,
         }
     },
 })
+
