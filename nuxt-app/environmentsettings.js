@@ -2,14 +2,23 @@ const GlobalSettings = {
     development: {
         siteEnvironment: 'Dev',
         telephone: '123',
+        googleTagManagerKey: 'GTM-MTM6H6Q',
+        googleTagManagerEnabled: true,
+        googleTagManagerDebug: true,
     },
     staging: {
-        siteEnvironment: 'Test',
+        siteEnvironment: 'Staging',
         telephone: '456',
+        googleTagManagerKey: '',
+        googleTagManagerEnabled: true,
+        googleTagManagerDebug: true,
     },
     production: {
         siteEnvironment: '',
         telephone: '789',
+        googleTagManagerKey: '',
+        googleTagManagerEnabled: true,
+        googleTagManagerDebug: false,
     },
 }
 

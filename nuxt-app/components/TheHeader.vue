@@ -11,7 +11,6 @@
          <nav class="nav">
              <ul class="nav-items">
                  <NuxtLink to="/main-page" class="nav-item">Home</NuxtLink>
-                 <NuxtLink to="/my-team" class="nav-item">Team</NuxtLink>
                  <NuxtLink to="/contact-us" class="nav-item">Contact</NuxtLink>                                             
              </ul>
          </nav>

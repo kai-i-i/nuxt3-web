@@ -1,0 +1,32 @@
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "Lorem ipsum dolor sit amet",
+        "body": "Consectetur adipiscing elit. Cras quis tortor tortor. Proin velit est, tristique eget lacinia vitae, mollis vitae mi. Morbi vitae elit et felis sagittis hendrerit."   
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "title": "Integer accumsan ut lorem at semper",
+        "body": "Donec sit amet sapien sed lacus tincidunt ornare. Fusce a sapien a ex mattis laoreet. Nam vestibulum sit amet mauris a varius. Maecenas id euismod magna, sed maximus lacus."   
+    },
+    {
+        "userId": 1,
+        "id": 3,
+        "title": "Integer sed mi ante",
+        "body": "Ut a faucibus risus, at varius mi. Praesent commodo nibh in egestas efficitur. Pellentesque rhoncus viverra posuere. Suspendisse consequat, dui vitae malesuada ornare, quam sapien fringilla magna, vel pharetra enim tortor nec sapien."   
+    },
+    {
+        "userId": 1,
+        "id": 4,
+        "title": "Quisque non urna du",
+        "body": "Aliquam enim mauris, interdum vel nisl a, efficitur sodales lectus. Cras feugiat est sit amet volutpat aliquam."   
+    },
+    {
+        "userId": 1,
+        "id": 5,
+        "title": "Vivamus tempus vehicula ipsum ut feugiat",
+        "body": "Quisque a arcu vel arcu imperdiet convallis eget ac mi. Integer non laoreet eros. In gravida ipsum ac sem sagittis semper."   
+    }
+]

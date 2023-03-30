@@ -1,5 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import { GlobalSettings } from './environmentsettings'
+import { GlobalSettings } from './environmentsettings.js'
 const appEnv = process.env.ENV || 'development'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -8,7 +8,10 @@ export default defineNuxtConfig({
         shim: false,
     },
     css: [
-        '@/assets/css/main.css'
+        '@/assets/css/main.css',
+        'awesome-notifications/dist/style.css', 
+        'vuetify/lib/styles/main.sass',
+        '@mdi/font/css/materialdesignicons.min.css'
     ],
     modules: ['@pinia/nuxt', 'nuxt-cookie-consent'],
     plugins: ['~~/store/app'],
@@ -18,6 +21,9 @@ export default defineNuxtConfig({
             companyname: 'Random Inc.',
             telephone: GlobalSettings[appEnv as keyof typeof GlobalSettings].telephone,
             siteEnvironment: GlobalSettings[appEnv as keyof typeof GlobalSettings].siteEnvironment,
+            gtm_id: GlobalSettings[appEnv as keyof typeof GlobalSettings].googleTagManagerKey,
+            gtm_enabled: GlobalSettings[appEnv as keyof typeof GlobalSettings].googleTagManagerEnabled,
+            gtm_debug: GlobalSettings[appEnv as keyof typeof GlobalSettings].googleTagManagerDebug,            
         }
     },
     cookieConsent: { 
@@ -44,6 +50,14 @@ export default defineNuxtConfig({
             checkboxActiveBackground: '#071bdc',
             checkboxInactiveBackground: '#8f99fb',
         },
-    },    
+    }, 
+    build: {
+        transpile: ['vuetify'],
+    },
+    vite: {
+        define: {
+            'process.env.DEBUG': false,
+        },
+    },       
 })
 

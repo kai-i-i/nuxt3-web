@@ -19,7 +19,10 @@
     })
 
     function cookiesAccepted(group) {
-        console.log('cookies accepted', group)        
+        console.log('cookies accepted', group)
+        const $gtm = useGTM()
+        const gtmCookieGroupName = 'Marketing'
+        if (group.name === gtmCookieGroupName) $gtm.enable()
     }
 
 </script>
