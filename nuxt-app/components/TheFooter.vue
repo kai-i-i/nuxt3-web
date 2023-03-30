@@ -16,9 +16,8 @@
 
 <script setup lang="ts">
     import { useAppStore } from '~~/store/app'
-    const appStore = useAppStore()
     const { public: config } = useRuntimeConfig() 
-    console.log(config.siteEnvironment)
+    const appStore = useAppStore()
 </script>
 
 <style scoped>

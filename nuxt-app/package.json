@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.7",
+    "nuxt-cookie-consent": "file:../modules/nuxt-cookie-consent/release/nuxt-cookie-consent-1.0.0.tgz",
     "pinia": "^2.0.33"
   }
 }

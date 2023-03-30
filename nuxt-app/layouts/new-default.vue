@@ -6,6 +6,7 @@
             <slot />
         </section>
         <TheFooter/>
+        <CookieConsent @cookies-accepted="cookiesAccepted"/>
     </div>
 </template>
 
@@ -16,6 +17,10 @@
     onMounted(() => {
         appStore.updateCookieConsent(true)
     })
+
+    function cookiesAccepted(group) {
+        console.log('cookies accepted', group)        
+    }
 
 </script>
 
