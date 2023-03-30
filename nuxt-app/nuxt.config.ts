@@ -13,7 +13,12 @@ export default defineNuxtConfig({
         'vuetify/lib/styles/main.sass',
         '@mdi/font/css/materialdesignicons.min.css'
     ],
-    modules: ['@pinia/nuxt', 'nuxt-cookie-consent'],
+    modules: [
+        '@pinia/nuxt', 
+        'nuxt-cookie-consent',
+        '@nuxtjs/tailwindcss',
+        '@nuxtjs/color-mode'
+    ],
     plugins: ['~~/store/app'],
     runtimeConfig: {
         public: {
@@ -27,7 +32,7 @@ export default defineNuxtConfig({
         }
     },
     cookieConsent: { 
-        controlButton: false,
+        controlButton: true,
         barPosition: 'bottom-left',
         necessary: [
             {
@@ -43,7 +48,7 @@ export default defineNuxtConfig({
             {
                 name: 'Marketing',
                 description: 'Used for Google Analytics',
-                cookies: ['random_ga_id'],
+                cookies: ['random_ga_id', '_ga', '_ga_<container-id>'],
             }, 
         ],
         colors: {
@@ -58,6 +63,19 @@ export default defineNuxtConfig({
         define: {
             'process.env.DEBUG': false,
         },
-    },       
+    }, 
+    colorMode: {
+        classSuffix: ''
+    },
+    tailwindcss: {
+        cssPath: '~/assets/css/tailwind.css',
+        configPath: 'tailwind.config',
+        exposeConfig: false,
+        exposeLevel: 2,
+        config: {},
+        injectPosition: 0,
+        viewer: true,
+    }
+
 })
 
