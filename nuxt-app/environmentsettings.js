@@ -9,14 +9,14 @@ const GlobalSettings = {
     staging: {
         siteEnvironment: 'Staging',
         telephone: '456',
-        googleTagManagerKey: '',
+        googleTagManagerKey: 'GTM-MTM6H6Q',
         googleTagManagerEnabled: true,
         googleTagManagerDebug: true,
     },
     production: {
         siteEnvironment: '',
         telephone: '789',
-        googleTagManagerKey: '',
+        googleTagManagerKey: 'GTM-MTM6H6Q',
         googleTagManagerEnabled: true,
         googleTagManagerDebug: false,
     },
